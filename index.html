@@ -4,7 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bank</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <section id="login-area">
+      <div class="container">
+        <h1 class="text-center display-3">Welcome to my Bank</h1>
+        <div class="submit-area p-5 mt-5">
+          <label class="display-5 mt-2 mb-3" for="login">Login</label>
+          <input
+            class="form-control mb-4"
+            type="email"
+            name="login"
+            id="login"
+            placeholder="Email"
+          />
+          <input
+            class="form-control"
+            type="password"
+            name="login"
+            id="login"
+            placeholder="Password"
+          />
+          <button class="button-click btn btn-primary mt-3">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tranjection-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="bg-primary mx-4 p-4 rounded-2">
+              <h5>Deposit</h5>
+              <h2>$ <span class="curresnt-deposit">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="bg-danger mx-4 p-4 rounded-2">
+              <h5>Withdraw</h5>
+              <h2>$ <span class="withdraw-deposit">00</span></h2>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="bg-success mx-4 p-4 rounded-2">
+              <h5>Balance</h5>
+              <h2>$ <span class="total-deposit">1200</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deposit-withdaw">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="p-5 mt-5 submit-area">
+                <label class="fs-2 mb-3" for="login">Deposit</label>
+                <input
+                  class="form-control mb-3"
+                  type="text"
+                  name="Deposit"
+                  id="deposit"
+                  placeholder="Deposit"
+                />
+                <button class="deposit-btn btn btn-primary mt-1">Submit</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-5 mt-5 submit-area">
+                <label class="fs-2 mb-3" for="login">Widthraw</label>
+                <input
+                  class="form-control mb-3"
+                  type="text"
+                  name="Widthraw"
+                  id="widthraw"
+                  placeholder="Widthraw"
+                />
+                <button class="widthraw-btn btn btn-primary mt-1">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="custom.js"></script>
+  </body>
 </html>
